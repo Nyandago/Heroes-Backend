@@ -14,7 +14,7 @@ fun Application.configureSerialization() {
 
     routing {
         get("/canny") {
-                call.respond(mapOf("hello" to "world"))
+                call.respond(mapOf("welcome" to "cannyville", "Paul" to "Nyandago"))
             }
     }
 }
