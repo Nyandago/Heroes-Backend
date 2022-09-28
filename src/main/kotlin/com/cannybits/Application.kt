@@ -14,5 +14,5 @@ fun Application.module() {
     configureHTTP()
     configureRouting()
     configureKoin()
-    configureDefaultHeader()
+   // configureDefaultHeader()
 }
