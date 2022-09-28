@@ -3,6 +3,7 @@ package com.cannybits
 import io.ktor.server.application.*
 import com.cannybits.plugins.*
 
+
 fun main(args: Array<String>): Unit =
     io.ktor.server.netty.EngineMain.main(args)
 
@@ -12,4 +13,6 @@ fun Application.module() {
     configureSerialization()
     configureHTTP()
     configureRouting()
+    configureKoin()
+    configureDefaultHeader()
 }
