@@ -1,5 +1,6 @@
 package com.cannybits.plugins
 
+import com.cannybits.routes.root
 import io.ktor.server.routing.*
 import io.ktor.http.*
 import io.ktor.server.http.content.*
@@ -11,12 +12,12 @@ fun Application.configureRouting() {
     
 
     routing {
-        get("/") {
-            call.respondText("Hello World!")
-        }
-        // Static plugin. Try to access `/static/index.html`
-        static("/static") {
-            resources("static")
-        }
+
+        root()
+
+       // Static plugin. Try to access `/static/index.html`
+//        static("/static") {
+//            resources("static")
+//        }
     }
 }
