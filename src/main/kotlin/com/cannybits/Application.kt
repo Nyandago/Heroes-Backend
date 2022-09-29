@@ -11,8 +11,8 @@ fun main(args: Array<String>): Unit =
 fun Application.module() {
     configureMonitoring()
     configureSerialization()
-    configureHTTP()
+    configureDefaultHeader()
     configureRouting()
     configureKoin()
-   // configureDefaultHeader()
+    configureStatusPages()
 }
