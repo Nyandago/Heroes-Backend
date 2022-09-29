@@ -2,6 +2,7 @@ package com.cannybits.plugins
 
 import com.cannybits.routes.getAllHeroes
 import com.cannybits.routes.root
+import com.cannybits.routes.searchHeroes
 import io.ktor.server.routing.*
 import io.ktor.http.*
 import io.ktor.server.http.content.*
@@ -16,7 +17,7 @@ fun Application.configureRouting() {
 
         root()
         getAllHeroes()
-
+        searchHeroes()
 
         static("/images") {
             resources("images")
