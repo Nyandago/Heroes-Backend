@@ -421,7 +421,7 @@ class HeroRepositoryImpl : HeroRepository {
             prevPage = prevPage?.minus(1)
         }
         if(page==1){
-            nextPage = null
+            prevPage = null
         }
 
         if(page==5){
